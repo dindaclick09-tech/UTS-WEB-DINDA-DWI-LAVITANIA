@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Personal Portfolio / Dashboard Web Page">
+    <title>Dinda Dwi Lavitania</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-custom sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="fa-solid fa-code me-2"></i>Hello, I'm Dinda
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience-gallery">Pengalaman & Foto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#calculator">Estimasi Biaya</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                    </ul>
+                    <!-- Dark Mode Toggle -->
+                    <button class="btn btn-outline-light btn-sm ms-lg-3 mt-2 mt-lg-0" id="darkModeToggle">
+                        <i class="fa-solid fa-moon"></i> Dark
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- Hero Section -->
+<section id="hero" class="py-5 bg-primary text-white text-center">
+    <div class="container py-4">
+        <!-- Tag img yang memanggil foto-->
+        <img src="img/profile.jpeg" alt="Foto Profil" class="rounded-circle img-thumbnail mb-3 shadow" style="width: 150px; height: 150px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/150'">
+       <!-- Badge Tambahan -->
+        <div class="mb-2">
+            <span class="badge bg-white text-dark px-3 py-2 rounded-pill shadow-sm opacity-90 fw-normal">
+                👋 Halo, Selamat Datang!
+            </span>
+        </div>
+
+        <h1 class="fw-bold">Portfolio & Space Karya</h1>
+        <p class="lead">Mahasiswa Sistem Informasi | Web & Data Enthusiast</p>
+        <a href="#projects" class="btn btn-light btn-lg mt-3 fw-bold">Lihat Proyek</a>
+        <div class="social-links d-flex justify-content-center gap-3 mt-4" aria-label="Media sosial">
+            <a href="https://www.instagram.com/berryy.bunbun/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Dinda" title="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/dindaclick09-tech" target="_blank" rel="noopener noreferrer" aria-label="GitHub Dinda" title="GitHub">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</section>
+    <main>
+
+<!-- Section Tentang Saya & Biodata Lengkap -->
+<!-- Section Tentang Saya & Biodata Lengkap -->
+<section id="about" class="py-5 fade-in-section">
+    <div class="container py-3">
+        <!-- Judul Section -->
+        <div class="text-center mb-5">
+            <span class="badge bg-success bg-opacity-15 text-success px-3 py-2 rounded-pill mb-2">✨ About Me</span>
+            <h2 class="fw-bold">Tentang Saya</h2>
+            <p class="text-muted">Mengenal lebih dekat perjalanan, latar belakang, dan keahlian saya</p>
+        </div>
+
+        <div class="row g-4 align-items-start">
+            <!-- Kolom Kiri: Cerita Singkat & Motivasi -->
+            <div class="col-lg-6">
+                <div class="card p-4 shadow-sm border-0 rounded-4 h-100">
+                    <h4 class="fw-bold mb-3 text-success">
+                        <i class="fa-solid fa-user-astronaut me-2"></i>Kisah Singkat
+                    </h4>
+                    <p class="text-muted leading-relaxed" style="text-align: justify;">
+                        Halo! Saya <strong>Dinda Dwi Lavitania</strong>, seorang mahasiswa Program Studi Sistem Informasi di Universitas Nusantara PGRI Kediri. Keseharian saya diwarnai dengan semangat belajar hal-hal baru di dunia teknologi—mulai dari eksplorasi pemrosesan data, logika pemrograman, hingga merangkai kode web yang interaktif.
+                    </p>
+                    <p class="text-muted leading-relaxed" style="text-align: justify;">
+                        Alasan utama saya memilih program studi Sistem Informasi adalah ketertarikan mendalam pada bagaimana teknologi dan logika sistem dapat dimanfaatkan untuk memecahkan masalah nyata. Di samping dunia akademik, saya juga memiliki latar belakang pengalaman di industri pelayanan (*hospitality*) sebagai barista dan *waitress*, yang melatih komunikasi dan kedisiplinan saya.
+                    </p>
+                    
+                    <div class="p-3 bg-light rounded-3 border-start border-4 border-success mt-2">
+                        <p class="fst-italic mb-0 small text-secondary">
+                            "Menyeimbangkan ketelitian dunia kerja pelayanan dengan kreativitas logika pemrograman untuk menciptakan solusi digital yang estetis dan fungsional."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Biodata, Pendidikan, Pengalaman & Hobi -->
+            <div class="col-lg-6">
+                <!-- Card Biodata Diri -->
+                <div class="card p-4 shadow-sm border-0 rounded-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-success">
+                        <i class="fa-solid fa-id-card me-2"></i>Biodata Diri
+                    </h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="py-2 border-bottom d-flex justify-content-between">
+                            <span class="text-muted"><i class="fa-solid fa-user me-2"></i>Nama Lengkap</span>
+                            <span class="fw-semibold">Dinda Dwi Lavitania</span>
+                        </li>
+                        <li class="py-2 border-bottom d-flex justify-content-between">
+                            <span class="text-muted"><i class="fa-solid fa-envelope me-2"></i>Email</span>
+                            <span class="fw-semibold">dindaclick09@gmail.com</span>
+                        </li>
+                        <li class="py-2 border-bottom d-flex justify-content-between">
+                            <span class="text-muted"><i class="fa-solid fa-cake-candles me-2"></i>TTL</span>
+                            <span class="fw-semibold">Kediri, 26 September 2005</span>
+                        </li>
+                        <li class="py-2 d-flex justify-content-between">
+                            <span class="text-muted"><i class="fa-solid fa-location-dot me-2"></i>Alamat</span>
+                            <span class="fw-semibold">Kediri, Jawa Timur</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Accordion: Pendidikan, Pengalaman, Hobi -->
+                <div class="accordion accordion-flush rounded-4 shadow-sm border-0 overflow-hidden" id="aboutAccordion">
+                    
+                    <!-- Item 1: Pendidikan -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEdu">
+                            <button class="accordion-button fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdu" aria-expanded="true" aria-controls="collapseEdu">
+                                <i class="fa-solid fa-school me-2"></i> Riwayat Pendidikan
+                            </button>
+                        </h2>
+                        <div id="collapseEdu" class="accordion-collapse collapse show" aria-labelledby="headingEdu" data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body small text-muted">
+                                <ul class="ps-3 mb-0">
+                                    <li class="mb-2"><strong class="text-dark">S1 Sistem Informasi</strong> - Universitas Nusantara PGRI Kediri</li>
+                                    <li class="mb-2"><strong class="text-dark">SMK Negeri 1 Ngasem</strong></li>
+                                    <li class="mb-2"><strong class="text-dark">SMP Negeri 1 Plemahan</strong></li>
+                                    <li><strong class="text-dark">SDN Wonokerto</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Pengalaman Kerja -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingExp">
+                            <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp" aria-expanded="false" aria-controls="collapseExp">
+                                <i class="fa-solid fa-briefcase me-2"></i> Pengalaman Kerja
+                            </button>
+                        </h2>
+                        <div id="collapseExp" class="accordion-collapse collapse" aria-labelledby="headingExp" data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body small text-muted">
+                                <div class="mb-3">
+                                    <strong class="text-dark d-block">Barista & Waitress - A One Hotel (Bintang 4)</strong>
+                                    <span>Memberikan pelayanan prima (*hospitality*), manajemen operasional kafe/hotel, serta melayani tamu dengan standar tinggi.</span>
+                                </div>
+                                <div>
+                                    <strong class="text-dark d-block">Barista - Coffee Shop di Kediri</strong>
+                                    <span>Meracik kopi, mengelola operasional kedai, dan berinteraksi langsung dengan pelanggan sehari-hari.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Hobi -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingHobby">
+                            <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHobby" aria-expanded="false" aria-controls="collapseHobby">
+                                <i class="fa-solid fa-heart me-2"></i> Minat & Hobi
+                            </button>
+                        </h2>
+                        <div id="collapseHobby" class="accordion-collapse collapse" aria-labelledby="headingHobby" data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body small">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">🎀 Crafting & DIY</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">🍵 Matcha & Coffee Lover</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">🎤 Singing</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">💻 Web & UI Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pengalaman dan Galeri -->
+<section id="experience-gallery" class="py-5 bg-light fade-in-section">
+    <div class="container py-3">
+        <div class="text-center mb-5">
+            <span class="badge bg-success bg-opacity-15 text-success px-3 py-2 rounded-pill mb-2">✨ Pengalaman Saya</span>
+            <h2 class="fw-bold">Pengalaman & Karya</h2>
+            <p class="text-muted">Beberapa momen dari dunia panggung, hospitality, dan crafting. Klik foto untuk melihat ukuran penuh.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+                <div class="card border-0 rounded-4 shadow-sm h-100 overflow-hidden">
+                    <a class="experience-photo-link" href="img/juara-teater.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="img/juara-teater.jpg" class="experience-photo" alt="Momen penghargaan teater dan monolog">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold text-success mb-2">Prestasi & Kejuaraan</h3>
+                        <p class="small text-muted mb-0">Juara 1 Teater Nasional (Jenter), Juara 2 Monolog tingkat kabupaten, Juara Jingle Anget Sari, dan Juara LBB.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card border-0 rounded-4 shadow-sm h-100 overflow-hidden">
+                    <a class="experience-photo-link" href="img/panggung-teater.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="img/panggung-teater.jpg" class="experience-photo" alt="Penampilan di panggung teater">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold text-success mb-2">Pentas & Public Speaking</h3>
+                        <p class="small text-muted mb-0">Performer Festival Nusantara dan Hari Jadi Kota Batu, serta pengalaman menjadi moderator dan MC.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card border-0 rounded-4 shadow-sm h-100 overflow-hidden">
+                    <a class="experience-photo-link" href="img/latte-art.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="img/latte-art.jpg" class="experience-photo" alt="Latte art saat bekerja sebagai barista">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold text-success mb-2">Barista & Hospitality</h3>
+                        <p class="small text-muted mb-0">Pengalaman sebagai barista dan waitress, termasuk meracik latte art di A-One Hotel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card border-0 rounded-4 shadow-sm h-100 overflow-hidden">
+                    <a class="experience-photo-link" href="img/crafting-hampers.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="img/crafting-hampers.jpg" class="experience-photo" alt="Karya crafting hampers dan buket">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold text-success mb-2">Crafting & DIY</h3>
+                        <p class="small text-muted mb-0">Membuat flower dan snack bouquet, custom hampers, serta flower sash.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+       <!-- Showcase Proyek -->
+<section id="projects" class="py-5 fade-in-section">
+    <div class="container py-3">
+        <div class="text-center mb-5">
+            <span class="badge bg-success bg-opacity-15 text-success px-3 py-2 rounded-pill mb-2">📁 Portfolio Showcase</span>
+            <h2 class="fw-bold">Showcase Proyek</h2>
+            <p class="text-muted">Kumpulan tugas kuliah, latihan, dan karya aplikasi yang telah dikerjakan</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Proyek 1: Eyefit.Me -->
+            <div class="col-md-4">
+                <div class="card p-4 h-100 shadow-sm border-0 rounded-4">
+                    <div class="mb-3 text-success fs-3"><i class="fa-solid fa-glasses"></i></div>
+                    <h5 class="fw-bold">Eyefit.Me (Face & Eyewear Analyzer)</h5>
+                    <p class="text-muted small">Aplikasi berbasis Python/Web untuk identifikasi bentuk wajah, rekomendasi bingkai kacamata, dan pencocokan warna sesuai *skintone*.</p>
+                    <div class="mt-auto pt-3">
+                        <span class="badge bg-success bg-opacity-10 text-success me-1">Python</span>
+                        <span class="badge bg-success bg-opacity-10 text-success me-1">OpenCV</span>
+                        <span class="badge bg-success bg-opacity-10 text-success">MediaPipe</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 2: Pendataan Barang -->
+            <div class="col-md-4">
+                <div class="card p-4 h-100 shadow-sm border-0 rounded-4">
+                    <div class="mb-3 text-success fs-3"><i class="fa-solid fa-boxes-stacked"></i></div>
+                    <h5 class="fw-bold">Aplikasi Pendataan Barang</h5>
+                    <p class="text-muted small">Sistem manajemen dan pencatatan inventaris barang untuk memudahkan pengelolaan stok secara terstruktur.</p>
+                    <div class="mt-auto pt-3">
+                        <span class="badge bg-success bg-opacity-10 text-success me-1">HTML5</span>
+                        <span class="badge bg-success bg-opacity-10 text-success me-1">JavaScript</span>
+                        <span class="badge bg-success bg-opacity-10 text-success">Database</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 3: Kalkulator & Kasir -->
+            <div class="col-md-4">
+                <div class="card p-4 h-100 shadow-sm border-0 rounded-4">
+                    <div class="mb-3 text-success fs-3"><i class="fa-solid fa-calculator"></i></div>
+                    <h5 class="fw-bold">Aplikasi Kalkulator & Kasir</h5>
+                    <p class="text-muted small">Program interaktif berbasis web untuk melakukan perhitungan matematika serta perhitungan total belanja dan diskon.</p>
+                    <div class="mt-auto pt-3">
+                        <span class="badge bg-success bg-opacity-10 text-success me-1">HTML5</span>
+                        <span class="badge bg-success bg-opacity-10 text-success">JavaScript (DOM)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 4: Web Portofolio -->
+            <div class="col-md-4">
+                <div class="card p-4 h-100 shadow-sm border-0 rounded-4">
+                    <div class="mb-3 text-success fs-3"><i class="fa-solid fa-globe"></i></div>
+                    <h5 class="fw-bold">Web Portofolio UTS (Sage & Cream)</h5>
+                    <p class="text-muted small">Website portofolio pribadi interaktif dengan tema estetis *Sage Green & Warm Beige*, fitur *Dark/Light Mode*, dan animasi *smooth*.</p>
+                    <div class="mt-auto pt-3">
+                        <span class="badge bg-success bg-opacity-10 text-success me-1">Bootstrap 5</span>
+                        <span class="badge bg-success bg-opacity-10 text-success me-1">CSS3</span>
+                        <span class="badge bg-success bg-opacity-10 text-success">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Kalkulator Estimasi Biaya -->
+<section id="calculator" class="py-5 fade-in-section">
+    <div class="container py-3">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-7">
+                <div class="card shadow-sm border-0 p-4 p-md-5 rounded-4">
+                    <div class="text-center mb-4">
+                        <span class="badge bg-success bg-opacity-15 text-success px-3 py-2 rounded-pill mb-2">🧮 Estimasi Proyek</span>
+                        <h2 class="fw-bold">Kalkulator Estimasi Biaya</h2>
+                        <p class="text-muted small mb-0">Hitung perkiraan biaya pembuatan website sesuai kebutuhanmu.</p>
+                    </div>
+
+                    <form id="calcForm">
+                        <div class="mb-3">
+                            <label for="projectType" class="form-label fw-semibold">Tipe Website</label>
+                            <select class="form-select" id="projectType" required>
+                                <option value="500000">Landing Page (Rp 500.000)</option>
+                                <option value="1200000">Company Profile (Rp 1.200.000)</option>
+                                <option value="2500000">E-Commerce / Custom App (Rp 2.500.000)</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="pageCount" class="form-label fw-semibold">Jumlah Halaman (Rp 100.000 / halaman)</label>
+                            <input type="number" class="form-control" id="pageCount" value="1" min="1" step="1" required>
+                        </div>
+
+                        <fieldset class="mb-4">
+                            <legend class="form-label fw-semibold">Fitur Tambahan</legend>
+                            <div class="form-check">
+                                <input class="form-check-input feature-check" type="checkbox" value="300000" id="featureSEO">
+                                <label class="form-check-label" for="featureSEO">Optimasi SEO Dasar (+Rp 300.000)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input feature-check" type="checkbox" value="400000" id="featureCMS">
+                                <label class="form-check-label" for="featureCMS">Integrasi Admin / CMS (+Rp 400.000)</label>
+                            </div>
+                        </fieldset>
+
+                        <button type="button" class="btn btn-primary w-100 py-2 fw-bold" onclick="calculateTotal()">Hitung Estimasi</button>
+                    </form>
+
+                    <div class="alert alert-success mt-4 mb-0 d-none text-center" id="resultBox" aria-live="polite">
+                        <h3 class="h6 mb-1">Estimasi Total Biaya:</h3>
+                        <p class="h3 fw-bold mb-0" id="totalPrice">Rp 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Contact Form Section dengan Sentuhan Animasi -->
+<section id="contact" class="py-5 fade-in-section">
+    <div class="container py-3">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <!-- Card dibungkus agar efek animasi melayangnya terlihat rapi -->
+                <div class="card shadow-lg border-0 p-4 p-md-5 rounded-4">
+                    <div class="text-center mb-4">
+                        <span class="badge bg-success bg-opacity-15 text-success px-3 py-2 rounded-pill mb-2">
+                            📬 Let's Connect
+                        </span>
+                        <h2 class="fw-bold">Hubungi Saya</h2>
+                        <p class="text-muted small">Punya pertanyaan atau ingin berdiskusi? Kirimkan pesan melalui form di bawah ini.</p>
+                    </div>
+
+                    <div id="contactAlert"></div>
+
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label fw-semibold">Nama Lengkap</label>
+                            <input type="text" class="form-control rounded-3 py-2" id="contactName" placeholder="Masukkan nama kamu..." required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label fw-semibold">Email</label>
+                            <input type="email" class="form-control rounded-3 py-2" id="contactEmail" placeholder="nama@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label fw-semibold">Pesan</label>
+                            <textarea class="form-control rounded-3" id="contactMessage" rows="4" placeholder="Tuliskan pesan atau kesanmu di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-3 fw-bold rounded-3 mt-2 shadow-sm">
+                            <i class="fa-solid fa-paper-plane me-2"></i> Kirim Pesan Sekarang
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 border-top">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2026 UTS Pemrograman Web - Universitas Nusantara PGRI Kediri</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

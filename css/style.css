@@ -1,0 +1,338 @@
+/* --- Animasi Background Bergerak (Animated Gradient) untuk Hero Section --- */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#hero {
+    /* Membuat ukuran background lebih besar dari area aslinya agar bisa bergeser */
+    background: linear-gradient(135deg, #4d6d63, #587d71, #769a8e, #8ca89e) !important;
+    background-size: 300% 300% !important;
+    /* Menjalankan animasi selama 10 detik secara berulang-ulang */
+    animation: gradientAnimation 10s ease infinite;
+    position: relative;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+/* Bingkai Foto Profil yang Lebih Stand Out */
+#hero img {
+    border: 4px solid rgba(255, 255, 255, 0.85) !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25) !important;
+    transition: transform 0.3s ease;
+}
+
+#hero img:hover {
+    transform: scale(1.05); /* Sedikit membesar saat disorot */
+}
+
+/* Judul & Teks Hero */
+#hero h1 {
+    font-size: 2.8rem;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#hero p.lead {
+    font-weight: 300;
+    opacity: 0.95;
+    font-size: 1.15rem;
+}
+
+/* Tombol 'Lihat Proyek' */
+#hero .btn-light {
+    background-color: #ffffff !important;
+    color: #3b584e !important;
+    border-radius: 50px !important; /* Bentuk kapsul yang manis */
+    padding: 12px 30px !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+#hero .btn-light:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+    background-color: #f8f9fa !important;
+}
+
+#hero .social-links a {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+#hero .social-links a:hover {
+    background-color: #fff;
+    color: var(--sage-dark);
+    transform: translateY(-3px);
+}
+
+.experience-photo-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.experience-photo {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.experience-photo-link:hover .experience-photo {
+    transform: scale(1.04);
+}
+
+/* Kustomisasi Navbar & Tombol Utama */
+.bg-primary {
+    background-color: var(--sage-primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--sage-primary) !important;
+    border-color: var(--sage-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--sage-dark) !important;
+    border-color: var(--sage-dark) !important;
+}
+
+.text-primary {
+    color: var(--sage-primary) !important;
+}
+
+/* Transisi Kartu Proyek */
+.project-card .card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: var(--sage-card);
+    border: 1px solid #e2e8e4 !important;
+}
+
+.project-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(88, 125, 113, 0.15);
+}
+
+/* --- Tema Dark Mode (Disesuaikan dengan nuansa gelap yang lembut) --- */
+body.dark-mode {
+    background-color: #161a18 !important;
+    color: #e2e8e4 !important;
+}
+
+body.dark-mode .bg-light {
+    background-color: #1e2421 !important;
+}
+
+body.dark-mode .card {
+    background-color: #242c28 !important;
+    color: #f4f6f4 !important;
+    border-color: #333f38 !important;
+}
+
+body.dark-mode main .text-dark {
+    color: #f4f6f4 !important;
+}
+
+body.dark-mode main .text-muted,
+body.dark-mode main .text-secondary {
+    color: #b8c3bd !important;
+}
+
+body.dark-mode main .text-success {
+    color: #a8c5b5 !important;
+}
+
+body.dark-mode .accordion-item,
+body.dark-mode .accordion-button {
+    background-color: #242c28 !important;
+    color: #f4f6f4 !important;
+    border-color: #333f38 !important;
+}
+
+body.dark-mode .accordion-button::after {
+    filter: invert(1);
+}
+
+body.dark-mode .list-group-item {
+    background-color: #242c28 !important;
+    color: #f4f6f4 !important;
+    border-color: #333f38 !important;
+}
+
+body.dark-mode .form-control, 
+body.dark-mode .form-select {
+    background-color: #1e2421;
+    color: #f4f6f4;
+    border-color: #333f38;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #8fa398;
+}
+/* --- Animasi Khusus Bagian Selamat Datang (Hero Section) --- */
+
+/* Efek Muncul & Geser ke Atas (Fade In Up) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Terapkan animasi ke elemen-elemen di dalam Hero */
+#hero img {
+    animation: fadeInUp 1s ease-out 0.2s; /* Foto muncul duluan */
+    animation-fill-mode: backwards;
+}
+
+#hero .badge {
+    animation: fadeInUp 1s ease-out 0.4s;
+    animation-fill-mode: backwards;
+}
+
+#hero h1 {
+    animation: fadeInUp 1s ease-out 0.6s; /* Judul 'Selamat Datang' muncul berikutnya */
+    animation-fill-mode: backwards;
+}
+
+#hero p.lead {
+    animation: fadeInUp 1s ease-out 0.8s; /* Sub-teks menyusul */
+    animation-fill-mode: backwards;
+}
+
+#hero a.btn {
+    animation: fadeInUp 1s ease-out 1s; /* Tombol 'Lihat Proyek' muncul terakhir */
+    animation-fill-mode: backwards;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efek hover interaktif saat tombol disentuh kursor */
+#hero a.btn:hover {
+    transform: scale(1.08); /* Sedikit membesar / membal */
+}
+/* --- Palet Warna Sage Green & Krem Hangat --- */
+:root {
+    --sage-primary: #587d71;
+    --sage-dark: #2c3e35;
+    --sage-bg: #f5f2eb;       /* Warna Krem Warm Beige untuk Latar Belakang Utama */
+    --cream-card: #fcfbfa;     /* Warna Krem Sangat Halus untuk Kartu/Card */
+    --cream-accent: #eae3d2;   /* Warna Krem Aksen untuk Border/Badge */
+}
+
+/* Mengubah latar belakang halaman menjadi Krem Soft */
+body {
+    background-color: var(--sage-bg);
+    color: var(--sage-dark);
+}
+
+/* Memperbarui Kartu Proyek/Kontak dengan Sentuhan Krem */
+.card, 
+.project-card .card {
+    background-color: var(--cream-card) !important;
+    border: 1px solid var(--cream-accent) !important;
+}
+
+/* Badge 'Halo, Selamat Datang!' dan Tag dengan Nuansa Krem */
+#hero .badge {
+    background-color: #f7f3e9 !important;
+    color: #4a6258 !important;
+    border: 1px solid #e2dac8;
+}
+
+/* Tombol 'Lihat Proyek' dengan Sentuhan Krem Lembut */
+#hero .btn-light {
+    background-color: #f9f6f0 !important;
+    color: #3b584e !important;
+    border: 1px solid #e8e0d0 !important;
+    border-radius: 50px !important;
+    padding: 12px 30px !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+}
+
+#hero .btn-light:hover {
+    background-color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* Section dengan Latar Belakang Selingan Krem */
+.bg-light {
+    background-color: #efebe2 !important;
+}
+/* --- Styling Navbar Dinamis (Terang / Gelap) --- */
+.navbar-custom {
+    background-color: #f5f2eb; /* Warna Krem Soft di Mode Cerah */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Warna teks menu & logo di Mode Cerah */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #2c3e35 !important; /* Warna Sage Gelap / Hijau Tua */
+    font-weight: 500;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #587d71 !important; /* Hijau Sage saat di-hover */
+}
+
+/* Tombol Mode Dark di Mode Cerah */
+.navbar-custom .btn-outline-light,
+#darkModeToggle {
+    color: #2c3e35;
+    border-color: #2c3e35;
+}
+
+
+/* --- Tampilan Saat Mode Gelap (Dark Mode) --- */
+body.dark-mode .navbar-custom {
+    background-color: #1a231f !important; /* Hijau Gelap Peat / Dark Slate */
+    border-bottom: 1px solid #2e3b35;
+}
+
+/* Warna teks menu & logo saat Mode Gelap */
+body.dark-mode .navbar-custom .navbar-brand,
+body.dark-mode .navbar-custom .nav-link {
+    color: #e2e8e4 !important; /* Teks Putih Soft */
+}
+
+/* Tombol Mode Dark saat Mode Gelap */
+body.dark-mode #darkModeToggle {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+/* --- Konfigurasi Fade-In On-Scroll --- */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Kelas ini otomatis ditambahkan oleh JavaScript pas bagiannya digeser */
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
